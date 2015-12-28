@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.evicord.thirdPartyLogin" version="0.2.3">
+    <name>thirdPartyLogin</name>
+    <description>weixin,weibo login</description>
+    <license>Apache 2.0</license>
+    <keywords>weixin,weibo,login</keywords>
+    <js-module src="www/thirdPartyLogin.js" name="thirdPartyLogin">
+        <clobbers target="thirdPartyLogin" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="thirdPartyLogin">
+                <param name="ios-package" value="thirdPartyLogin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/thirdPartyLogin.h" />
+        <source-file src="src/ios/thirdPartyLogin.m" />
+    </platform>
+</plugin>
