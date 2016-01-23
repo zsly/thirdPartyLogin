@@ -7,7 +7,7 @@
 //
 
 #import "thirdPartyLogin.h"
-
+#import "Operation.h"
 #import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
 
 @implementation thirdPartyLogin
